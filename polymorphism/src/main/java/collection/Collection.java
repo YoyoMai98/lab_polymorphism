@@ -21,4 +21,8 @@ public class Collection {
     public void removeDramaToList(Drama drama){
         dramaCollection.remove(drama);
     }
+
+    public int countDramaCollection(){
+        return this.dramaCollection.size();
+    }
 }
