@@ -17,4 +17,8 @@ public class Collection {
     public void addDramaToList(Drama drama){
         dramaCollection.add(drama);
     }
+
+    public void removeDramaToList(Drama drama){
+        dramaCollection.remove(drama);
+    }
 }
