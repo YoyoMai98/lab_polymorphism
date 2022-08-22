@@ -35,4 +35,11 @@ public class TelevisionTest {
         String expected = "Oh no, it closed.";
         assertEquals(actual, expected);
     }
+
+    @Test
+    public void canShowCountry(){
+        String expected = "This is America TV shows.";
+        String actual = tv.showCountry();
+        assertEquals(expected, actual);
+    }
 }
