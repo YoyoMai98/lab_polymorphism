@@ -27,4 +27,13 @@ public class CollectionTest {
         int expected = 1;
         assertEquals(actual, expected);
     }
+
+    @Test
+    public void canRemoveDramaToList(){
+        collection.addDramaToList(cm);
+        collection.removeDramaToList(cm);
+        int actual = collection.countDramaCollection();
+        int expected = 0;
+        assertEquals(actual, expected);
+    }
 }
