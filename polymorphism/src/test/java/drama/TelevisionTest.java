@@ -20,4 +20,19 @@ public class TelevisionTest {
         String actual = tv.showName();
         assertEquals(actual, expected);
     }
+
+    @Test
+    public void canNowShowing_true(){
+        String actual = tv.nowShowing();
+        String expected = "It is showing now!";
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void canNowShowing_false(){
+        tv.setIsShown(false);
+        String actual = tv.nowShowing();
+        String expected = "Oh no, it closed.";
+        assertEquals(actual, expected);
+    }
 }
