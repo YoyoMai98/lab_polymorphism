@@ -2,7 +2,10 @@ package drama;
 
 public class Television extends Drama{
 
-    public Television(String title, String director){
+    private String country;
+
+    public Television(String title, String director, String country){
         super(title, director);
+        this.country = country;
     }
 }
