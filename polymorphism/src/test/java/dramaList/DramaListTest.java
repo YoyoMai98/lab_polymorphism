@@ -28,4 +28,14 @@ public class DramaListTest {
         int actual = watchedList.countDramaCollection();
         assertEquals(actual,expected);
     }
+
+    @Test
+    public void canRemoveDramaFromCollection(){
+        Television poi = new Television("Person of Interest", "Jonathan Nolan","America");
+        fullList.addDramaToCollection(poi, watchList);
+        fullList.removeDramaFromCollection(poi,watchList);
+        int expected = 0;
+        int actual = watchList.countDramaCollection();
+        assertEquals(actual,expected);
+    }
 }
