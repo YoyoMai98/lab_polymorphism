@@ -8,4 +8,8 @@ public class Television extends Drama{
         super(title, director);
         this.country = country;
     }
+
+    public String showCountry(){
+        return String.format("This is %s TV shows.", this.country);
+    }
 }
