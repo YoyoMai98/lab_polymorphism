@@ -13,4 +13,8 @@ public class Collection {
         this.type = type;
         dramaCollection = new ArrayList<>();
     }
+
+    public void addDramaToList(Drama drama){
+        dramaCollection.add(drama);
+    }
 }
