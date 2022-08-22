@@ -2,7 +2,10 @@ package drama;
 
 public class Film extends Drama {
 
-    public Film(String title, String director){
+    private boolean isReplay;
+
+    public Film(String title, String director, boolean isReplay){
         super(title, director);
+        this.isReplay = isReplay;
     }
 }
