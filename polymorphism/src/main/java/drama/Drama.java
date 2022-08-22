@@ -36,4 +36,8 @@ public class Drama {
         this.isShown = isShown;
     }
 
+    public String showName(){
+        return String.format("The drama is called %s.", this.title);
+    }
+
 }
