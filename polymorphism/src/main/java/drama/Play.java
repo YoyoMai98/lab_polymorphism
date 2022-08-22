@@ -8,4 +8,8 @@ public class Play extends Drama{
         super(title, director);
         this.theatre = theatre;
     }
+
+    public String showTheatre(){
+        return String.format("It is played at %s", this.theatre);
+    }
 }
