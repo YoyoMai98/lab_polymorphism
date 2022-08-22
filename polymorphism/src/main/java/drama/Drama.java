@@ -1,6 +1,6 @@
 package drama;
 
-public class Drama {
+public abstract class Drama {
 
     private String title;
     private String director;
