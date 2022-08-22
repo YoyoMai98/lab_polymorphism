@@ -35,4 +35,11 @@ public class PlayTest {
         String expected = "Oh no, it closed.";
         assertEquals(actual, expected);
     }
+
+    @Test
+    public void canShowTheatre(){
+        String actual = play.showTheatre();
+        String expected = "It is played at The Palace Theatre";
+        assertEquals(actual, expected);
+    }
 }
