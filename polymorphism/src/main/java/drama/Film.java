@@ -11,10 +11,12 @@ public class Film extends Drama {
 
     @Override
     public String nowShowing(){
-        if(isReplay == true){
+        if(isReplay){
             return "The movie is back on cinema!";
+        }else if(super.getIsShown() == false){
+            return "It is not showing on cinema.";
         }else{
-            return "Watch it at home.";
+            return "Watch it on cinema!";
         }
     }
 }
