@@ -2,7 +2,10 @@ package drama;
 
 public class Play extends Drama{
 
-    public Play(String title, String director){
+    private String theatre;
+
+    public Play(String title, String director, String theatre){
         super(title, director);
+        this.theatre = theatre;
     }
 }
