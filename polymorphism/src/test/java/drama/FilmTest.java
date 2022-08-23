@@ -39,4 +39,11 @@ public class FilmTest {
         String actual = film.nowShowing();
         String expected = "It is not showing on cinema.";
     }
+
+    @Test
+    public void canNowShowingWithArgument(){
+        String expected = "The Lord of the Rings is showing at VUE";
+        String actual = film.nowShowing("VUE");
+        assertEquals(actual,expected);
+    }
 }
