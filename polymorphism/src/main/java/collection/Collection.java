@@ -1,6 +1,7 @@
 package collection;
 
 import drama.Drama;
+import interfaces.IVirtual;
 
 import java.util.ArrayList;
 
@@ -8,6 +9,7 @@ public class Collection {
 
     private String type;
     private ArrayList<Drama> dramaCollection;
+    private ArrayList<IVirtual> virtualCollection;
 
     public Collection(String type){
         this.type = type;
@@ -24,5 +26,9 @@ public class Collection {
 
     public int countDramaCollection(){
         return this.dramaCollection.size();
+    }
+
+    public void addDramaToVirtualCollection(IVirtual virtualDrama){
+        virtualCollection.add(virtualDrama);
     }
 }
