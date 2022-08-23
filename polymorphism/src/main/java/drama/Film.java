@@ -29,4 +29,12 @@ public class Film extends Drama implements IDirector {
     public String showDirector(){
         return String.format("%s was directed by %s", super.getTitle(), super.getDirector());
     }
+
+    public boolean getIsReplay(){
+        return this.isReplay;
+    }
+
+    public void setIsReplay(boolean IsReplay) {
+        isReplay = IsReplay;
+    }
 }
