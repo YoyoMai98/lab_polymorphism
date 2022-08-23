@@ -1,6 +1,8 @@
 package drama;
 
-public class Television extends Drama{
+import interfaces.IDirector;
+
+public class Television extends Drama implements IDirector {
 
     private String country;
 
@@ -19,5 +21,9 @@ public class Television extends Drama{
         }else{
             return "Oh no, not shown in tv.";
         }
+    }
+
+    public String showDirector(){
+        return String.format("At least one episode from %s was directed by %s", super.getTitle(), super.getDirector());
     }
 }
