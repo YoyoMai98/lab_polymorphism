@@ -25,19 +25,24 @@ public class FilmTest {
     public void canNowShowing_isReplay_true(){
         String actual = film.nowShowing();
         String expected = "The movie is back on cinema!";
+        assertEquals(actual,expected);
     }
 
     @Test
     public void canNowShowing_isReplay_false_isShown_true(){
+        film.setIsReplay(false);
         String actual = film.nowShowing();
         String expected = "Watch it on cinema!";
+        assertEquals(actual,expected);
     }
 
     @Test
     public void canNowShowing_isReplay_false_isShown_false(){
+        film.setIsReplay(false);
         film.setIsShown(false);
         String actual = film.nowShowing();
         String expected = "It is not showing on cinema.";
+        assertEquals(actual,expected);
     }
 
     @Test
