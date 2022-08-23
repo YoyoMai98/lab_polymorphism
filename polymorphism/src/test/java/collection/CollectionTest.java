@@ -36,4 +36,10 @@ public class CollectionTest {
         int expected = 0;
         assertEquals(actual, expected);
     }
+
+    @Test
+    public void canAddDramaToVirtualCollection(){
+        collection.addDramaToVirtualCollection(cm);
+        collection.addDramaToVirtualCollection(poi);
+    }
 }
