@@ -51,4 +51,11 @@ public class FilmTest {
         String actual = film.nowShowing("VUE");
         assertEquals(actual,expected);
     }
+
+    @Test
+    public void virtualMedia(){
+        String expected = "The Lord of the Rings could be watched online.";
+        String actual = film.virtualMedia();
+        assertEquals(expected, actual);
+    }
 }

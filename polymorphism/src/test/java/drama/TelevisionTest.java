@@ -42,4 +42,11 @@ public class TelevisionTest {
         String actual = tv.showCountry();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void virtualMedia(){
+        String expected = "Person of Interest could be watched online.";
+        String actual = tv.virtualMedia();
+        assertEquals(expected, actual);
+    }
 }
