@@ -43,7 +43,7 @@ public class CollectionTest {
         collection.addDramaToVirtualCollection((IVirtual) cm);
         collection.addDramaToVirtualCollection((IVirtual) poi);
         int actual = collection.countVirtualCollection();
-        int extpeced = 2;
-        assertEquals(extpeced, actual);
+        int expected = 2;
+        assertEquals(expected, actual);
     }
 }

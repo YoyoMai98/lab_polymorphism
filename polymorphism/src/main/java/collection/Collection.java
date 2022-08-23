@@ -13,7 +13,8 @@ public class Collection {
 
     public Collection(String type){
         this.type = type;
-        dramaCollection = new ArrayList<>();
+        this.dramaCollection = new ArrayList<>();
+        this.virtualCollection = new ArrayList<>();
     }
 
     public void addDramaToList(Drama drama){
@@ -29,7 +30,7 @@ public class Collection {
     }
 
     public void addDramaToVirtualCollection(IVirtual virtualDrama){
-        virtualCollection.add(virtualDrama);
+        this.virtualCollection.add(virtualDrama);
     }
 
     public int countVirtualCollection(){
