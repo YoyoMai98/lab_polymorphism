@@ -1,6 +1,8 @@
 package drama;
 
-public class Television extends Drama {
+import interfaces.IVirtual;
+
+public class Television extends Drama implements IVirtual {
 
     private String country;
 
@@ -19,5 +21,9 @@ public class Television extends Drama {
         }else{
             return "Oh no, not shown in tv.";
         }
+    }
+
+    public String virtualMedia(){
+        return String.format("%s could be watched online.", super.getTitle());
     }
 }

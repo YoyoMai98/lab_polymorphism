@@ -1,6 +1,8 @@
 package drama;
 
-public class Film extends Drama {
+import interfaces.IVirtual;
+
+public class Film extends Drama implements IVirtual {
 
     private boolean isReplay;
 
@@ -30,5 +32,9 @@ public class Film extends Drama {
 
     public void setIsReplay(boolean IsReplay) {
         isReplay = IsReplay;
+    }
+
+    public String virtualMedia(){
+        return String.format("%s could be watched online.", super.getTitle());
     }
 }
