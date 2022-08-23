@@ -40,7 +40,10 @@ public class CollectionTest {
 
     @Test
     public void canAddDramaToVirtualCollection(){
-        collection.addDramaToVirtualCollection(cm);
-        collection.addDramaToVirtualCollection(poi);
+        collection.addDramaToVirtualCollection((IVirtual) cm);
+        collection.addDramaToVirtualCollection((IVirtual) poi);
+        int actual = collection.countVirtualCollection();
+        int extpeced = 2;
+        assertEquals(extpeced, actual);
     }
 }
