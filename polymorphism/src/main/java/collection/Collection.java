@@ -1,6 +1,7 @@
 package collection;
 
 import drama.Drama;
+import interfaces.IDirector;
 
 import java.util.ArrayList;
 
@@ -8,6 +9,7 @@ public class Collection {
 
     private String type;
     private ArrayList<Drama> dramaCollection;
+    private ArrayList<IDirector> directors;
 
     public Collection(String type){
         this.type = type;
@@ -24,5 +26,9 @@ public class Collection {
 
     public int countDramaCollection(){
         return this.dramaCollection.size();
+    }
+
+    public void addDirectorToList(IDirector director){
+        directors.add(director);
     }
 }
