@@ -31,4 +31,8 @@ public class Collection {
     public void addDirectorToList(IDirector director){
         directors.add(director);
     }
+
+    public int countDirectors(){
+        return this.directors.size();
+    }
 }
