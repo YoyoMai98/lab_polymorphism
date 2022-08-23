@@ -2,6 +2,7 @@ package collection;
 
 import drama.Drama;
 import drama.Television;
+import interfaces.IVirtual;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

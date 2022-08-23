@@ -31,4 +31,8 @@ public class Collection {
     public void addDramaToVirtualCollection(IVirtual virtualDrama){
         virtualCollection.add(virtualDrama);
     }
+
+    public int countVirtualCollection(){
+        return this.virtualCollection.size();
+    }
 }
