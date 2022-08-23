@@ -12,4 +12,12 @@ public class Play extends Drama{
     public String showTheatre(){
         return String.format("It is played at %s", this.theatre);
     }
+
+    public String nowShowing(){
+        if(super.getIsShown() == true){
+            return "It is showing now!";
+        }else{
+            return "Oh no, it closed.";
+        }
+    }
 }
