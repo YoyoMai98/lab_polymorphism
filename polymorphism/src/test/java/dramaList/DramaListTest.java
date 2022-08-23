@@ -2,6 +2,7 @@ package dramaList;
 
 import collection.Collection;
 import drama.Television;
+import interfaces.IVirtual;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -38,6 +39,15 @@ public class DramaListTest {
         fullList.removeDramaFromCollection(poi,watchList);
         int expected = 0;
         int actual = watchList.countDramaCollection();
+        assertEquals(actual,expected);
+    }
+
+    @Test
+    public void canAddDramaToVirtualCollection(){
+        Television poi = new Television("Person of Interest", "Jonathan Nolan","America");
+        fullList.addDramaToVirtualCollection(poi, watchOnlineList);
+        int expected = 1;
+        int actual = watchOnlineList.countVirtualCollection();
         assertEquals(actual,expected);
     }
 }
