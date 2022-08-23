@@ -31,6 +31,14 @@ public class DramaList {
         this.watchList = watchList;
     }
 
+    public Collection getWatchOnlineList() {
+        return watchOnlineList;
+    }
+
+    public void setWatchOnlineList(Collection watchOnlineList) {
+        this.watchOnlineList = watchOnlineList;
+    }
+
     public void addDramaToCollection(Drama drama, Collection collection){
         collection.addDramaToList(drama);
     }
