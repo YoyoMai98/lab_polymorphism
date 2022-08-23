@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CollectionTest {
 
-    private Drama poi;
-    private Drama cm;
+    private Television poi;
+    private Television cm;
     private Collection collection;
 
     @BeforeEach
@@ -40,8 +40,8 @@ public class CollectionTest {
 
     @Test
     public void canAddDramaToVirtualCollection(){
-        collection.addDramaToVirtualCollection((IVirtual) cm);
-        collection.addDramaToVirtualCollection((IVirtual) poi);
+        collection.addDramaToVirtualCollection(cm);
+        collection.addDramaToVirtualCollection(poi);
         int actual = collection.countVirtualCollection();
         int expected = 2;
         assertEquals(expected, actual);
