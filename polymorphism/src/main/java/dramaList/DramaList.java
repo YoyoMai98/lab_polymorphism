@@ -7,10 +7,12 @@ public class DramaList {
 
     private Collection watchList;
     private Collection watchedList;
+    private Collection watchOnlineList;
 
-    public DramaList(Collection watchList, Collection watchedList){
+    public DramaList(Collection watchList, Collection watchedList, Collection watchOnlineList){
         this.watchList = watchList;
         this.watchedList = watchedList;
+        this.watchOnlineList = watchOnlineList;
     }
 
     public Collection getWatchedList() {
