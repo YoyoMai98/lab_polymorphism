@@ -2,6 +2,7 @@ package dramaList;
 
 import collection.Collection;
 import drama.Drama;
+import interfaces.IVirtual;
 
 public class DramaList {
 
@@ -45,5 +46,9 @@ public class DramaList {
 
     public void removeDramaFromCollection(Drama drama, Collection collection){
         collection.removeDramaToList(drama);
+    }
+
+    public void addDramaToVirtualCollection(IVirtual virtual, Collection collection){
+        collection.addDramaToVirtualCollection(virtual);
     }
 }
