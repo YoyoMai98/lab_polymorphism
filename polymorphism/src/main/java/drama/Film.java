@@ -1,8 +1,6 @@
 package drama;
 
-import interfaces.IDirector;
-
-public class Film extends Drama implements IDirector {
+public class Film extends Drama {
 
     private boolean isReplay;
 
@@ -24,10 +22,6 @@ public class Film extends Drama implements IDirector {
 
     public String nowShowing(String cinema){
         return String.format("%s is showing at %s", super.getTitle(), cinema);
-    }
-
-    public String showDirector(){
-        return String.format("%s was directed by %s", super.getTitle(), super.getDirector());
     }
 
     public boolean getIsReplay(){
