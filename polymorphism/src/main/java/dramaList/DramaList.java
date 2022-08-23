@@ -13,6 +13,22 @@ public class DramaList {
         this.watchedList = watchedList;
     }
 
+    public Collection getWatchedList() {
+        return watchedList;
+    }
+
+    public Collection getWatchList() {
+        return watchList;
+    }
+
+    public void setWatchedList(Collection watchedList) {
+        this.watchedList = watchedList;
+    }
+
+    public void setWatchList(Collection watchList) {
+        this.watchList = watchList;
+    }
+
     public void addDramaToCollection(Drama drama, Collection collection){
         collection.addDramaToList(drama);
     }
