@@ -40,12 +40,6 @@ public abstract class Drama {
         return String.format("The drama is called %s.", this.title);
     }
 
-    public String nowShowing(){
-        if(isShown == true){
-            return "It is showing now!";
-        }else{
-            return "Oh no, it closed.";
-        }
-    }
+    public abstract String nowShowing();
 
 }
