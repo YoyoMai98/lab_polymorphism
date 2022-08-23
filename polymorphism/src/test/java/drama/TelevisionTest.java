@@ -32,7 +32,7 @@ public class TelevisionTest {
     public void canNowShowing_false(){
         tv.setIsShown(false);
         String actual = tv.nowShowing();
-        String expected = "Oh no, it closed.";
+        String expected = "Oh no, not shown in tv.";
         assertEquals(actual, expected);
     }
 
